@@ -10,6 +10,9 @@
     <!-- ===== RESET CSS ===== -->
     <link rel="stylesheet" href="./assets/styles/abstract/reset.css">
 
+    <!-- ===== BOOTSTRAP CSS ===== -->
+    <link rel="stylesheet" href="./assets/styles/abstract/bootstrap.min.css">
+
     <!-- ===== SWIPERJS CSS ===== -->
     <link rel="stylesheet" href="./assets/styles/abstract/swiper-bundle.min.css">
 
@@ -37,167 +40,325 @@
                 <li><a href=""><img src="./assets/images/twitter.png" alt=""></a></li>
             </ul>
         </nav>
+    </header>
 
-        <main>
+    <main>
 
-            <!-- ===== E-BOOKS START ===== -->
-            <section class="ebooks-container">
+        <!-- ===== COURSES START ===== -->
+        <section class="courses-container">
 
-                <!-- ===== E-BOOKS TITLE START ===== -->
-                <div class="ebooks">
-                    <h2>E-Books</h2>
+            <!-- ===== COURSE SLIDER START ===== -->
+            <div id="courseSlider" class="carousel slide" data-bs-ride="false">
+
+                <!-- ===== COURSE INDICATORS START ===== -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#courseSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#courseSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#courseSlider" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <!-- ===== E-BOOKS TITLE END ===== -->
+                <!-- ===== COURSE INDICATORS END ===== -->
 
-                <!-- ===== E-BOOKS SLIDER START ===== -->
-                <div class="ebooks-content">
-                    <div class="container swiper">
-                        <div class="slide-container">
-                            <div class="card-wrapper swiper-wrapper">
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                <!-- ===== COURSE CONTENT START ===== -->
+                <div class="carousel-inner">
+
+                    <!-- ===== PERMANENT FORMATION START ===== -->
+                    <div class="carousel-item active">
+                        <div class="item-content">
+                            <div class="course-description">
+
+                                <!-- ===== COURSE TITLE ===== -->
+                                <h2 class="course-title">Formação Permanente em Criptomoedas 2.0</h2>
+
+                                <!-- ===== COURSE TEXT ===== -->
+                                <p class="course-text">Curso de formação permanente em criptomoedas para iniciantes
+                                    deste
+                                    mercado. Tudo sobre Bitcoin, altcoins, análises gráficas, indicadores, análises
+                                    fundamentalistas, blockchain, Defi, NFT, gamefi, metaverso, operacionalidade de
+                                    compra e
+                                    venda, hold, trade, ferramentas, aplicativos, dados on-chain, lançamentos de
+                                    novos
+                                    tokens e moedas, renda passiva com criptomoedas e muito mais!
+                                </p>
+
+                                <!-- ===== COURSE BUTTON ===== -->
+                                <a href="" class="button">Compre Agora</a>
+                            </div>
+
+                            <!-- ===== COURSE IMAGE ===== -->
+                            <div class="image-container">
+                                <img src="./assets/images/bitcoin.jpg" class="carousel-image" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===== PERMANENT FORMATION END ===== -->
+
+                    <!-- =====GRAPHIC ANALYSIS START ===== -->
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="course-description">
+
+                                <!-- ===== COURSE TITLE ===== -->
+                                <h2 class="course-title">Criptomoedas - Análise gráfica para iniciantes</h2>
+
+                                <!-- ===== COURSE TEXT ===== -->
+                                <p class="course-text">Durante o curso, os alunos aprenderão os princípios básicos
+                                    da
+                                    análise gráfica, incluindo a leitura de gráficos de velas e o uso de indicadores
+                                    técnicos para identificar tendências e padrões. Eles também aprenderão a
+                                    interpretar
+                                    padrões comuns, como suporte e resistência, entre outros.
+                                </p>
+
+                                <!-- ===== COURSE BUTTON ===== -->
+                                <a href="" class="button">Compre Agora</a>
+                            </div>
+
+                            <!-- ===== COURSE IMAGE ===== -->
+                            <div class="image-container">
+                                <img src="./assets/images/grafico.jpg" class="carousel-image" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =====GRAPHIC ANALYSIS END ===== -->
+
+                    <!-- ===== DEFI START ===== -->
+                    <div class="carousel-item">
+                        <div class="item-content">
+                            <div class="course-description">
+
+                                <!-- ===== COURSE TITLE ===== -->
+                                <h2 class="course-title">Curso DeFi para Iniciantes no mercado de criptomoedas</h2>
+
+                                <!-- ===== COURSE TEXT ===== -->
+                                <p class="course-text">Este curso tem como objetivo fornecer uma introdução
+                                    abrangente às
+                                    finanças descentralizadas (DeFi) e ensinar os alunos a investir em criptomoedas
+                                    de forma
+                                    segura e eficiente. Durante o curso, os alunos irão aprender os conceitos
+                                    básicos do
+                                    ecossistema DeFi, como funcionam as exchanges descentralizadas (DEX), as
+                                    stablecoins, os
+                                    tokens de governança, entre outros.
+                                </p>
+
+                                <!-- ===== COURSE BUTTON ===== -->
+                                <a href="" class="button">Compre Agora</a>
+                            </div>
+
+                            <!-- ===== COURSE IMAGE ===== -->
+                            <div class="image-container">
+                                <img src="./assets/images/defi.jpg" class="carousel-image" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===== DEFI END ===== -->
+                </div>
+                <!-- ===== COURSE CONTENT END ===== -->
+            </div>
+            <!-- ===== COURSES SLIDER END ===== -->
+        </section>
+        <!-- ===== COURSES END ===== -->
+
+        <!-- ===== E-BOOKS START ===== -->
+        <section class="ebooks-container">
+
+            <!-- ===== E-BOOKS TITLE START ===== -->
+            <div class="ebooks">
+                <h2>E-Books</h2>
+            </div>
+            <!-- ===== E-BOOKS TITLE END ===== -->
+
+            <!-- ===== E-BOOKS SLIDER START ===== -->
+            <div class="ebooks-content">
+                <div class="container swiper">
+                    <div class="slide-container">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
                                 </div>
-                                <div class="card swiper-slide">
-                                    <div class="image-box">
-                                        <img src="./assets/images/ethereum-ebook.jpg" alt="" />
-                                    </div>
-                                    <div class="ebook-details">
-                                        <h3 class="ebook-title">
-                                            Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
-                                            Inteligentes
-                                        </h3>
-                                        <a class="link-button" href="">
-                                            <div class="ebook-button">Compre Agora</div>
-                                        </a>
-                                    </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
+                                </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
+                                </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
+                                </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
+                                </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="image-box">
+                                    <img src="./assets/images/ethereum-ebook.jpg" alt="" />
+                                </div>
+                                <div class="ebook-details">
+                                    <h3 class="ebook-title">
+                                        Ethereum: O Guia Definitivo para Iniciantes em Criptomoedas e Contratos
+                                        Inteligentes
+                                    </h3>
+                                    <a class="link-button" href="">
+                                        <div class="ebook-button">Compre Agora</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- ===== E-BOOK SLIDER BUTTONS START ===== -->
-                        <div class="swiper-button-next swiper-navBtn"></div>
-                        <div class="swiper-button-prev swiper-navBtn"></div>
-                        <div class="swiper-pagination"></div>
-                        <!-- ===== E-BOOK SLIDER BUTTONS END ===== -->
                     </div>
+
+                    <!-- ===== E-BOOK SLIDER BUTTONS START ===== -->
+                    <div class="swiper-button-next swiper-navBtn"></div>
+                    <div class="swiper-button-prev swiper-navBtn"></div>
+                    <div class="swiper-pagination"></div>
+                    <!-- ===== E-BOOK SLIDER BUTTONS END ===== -->
                 </div>
-                <!-- ===== E-BOOKS SLIDER END ===== -->
-            </section>
-            <!-- ===== E-BOOKS END ===== -->
+            </div>
+            <!-- ===== E-BOOKS SLIDER END ===== -->
+        </section>
+        <!-- ===== E-BOOKS END ===== -->
 
-        </main>
+        <!-- ===== ABOUT ME START ===== -->
+        <section class="about-container">
 
-    </header>
-    
+            <!-- ===== ABOUT CONTAINER TITLE ===== -->
+            <h3 class="about-title">Sobre mim</h3>
+
+            <div class="about-content">
+                <!-- ===== ABOUT IMAGE  ===== -->
+                <div class="about-image-container">
+                    <img src="./assets/images/Caio.jpg" alt="">
+                </div>
+
+                <!-- ===== ABOUT DESCRIPTION ===== -->
+                <div class="about-description">
+                    <h4 class="description-title">
+                        Conheça mais sobre mim: Histórias e Experiências de um Investidor em Criptomoedas
+                    </h4>
+                    <p class="description-text">Desde o início da minha trajetória, que começou com uma curiosidade
+                        sobre
+                        esse mercado digital em ascensão, até os dias atuais, continuo a explorar as possibilidades
+                        financeiras das criptomoedas, passando por desafios e aprendizados ao longo do caminho.</p>
+                    <p class="description-text">Ao longo desse processo, tive a oportunidade de conhecer diferentes
+                        perspectivas sobre as criptomoedas, estudando sua tecnologia, acompanhar a evolução do mercado
+                        e,
+                        principalmente, adquirindo experiência prática através da realização de investimentos em
+                        diversas
+                        criptomoedas.</p>
+                    <p class="description-text">Além disso, também adquiri habilidades de análise de mercado e de risco,
+                        essenciais para quem deseja investir em criptomoedas de maneira consciente e assertiva. Tudo
+                        isso me
+                        permitiu ampliar meus horizontes financeiros e explorar novas possibilidades de investimento.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- ===== BOOTSTRAP JS ===== -->
+    <script src="./assets/scripts/bootstrap.bundle.min.js"></script>
+
     <!-- ===== SWIPER JS ===== -->
     <script src="./assets/scripts/swiper-bundle.min.js"></script>
 

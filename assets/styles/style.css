@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 87%;
   margin: 0 auto;
   padding: 50px 0 1rem 0;
 }
@@ -41,6 +41,15 @@ nav .social-media img {
   border: 2px solid #EEEEEE;
 }
 
+@media screen and (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 550px) {
   nav .logo {
     font-size: 1.25rem;
@@ -49,8 +58,100 @@ nav .social-media img {
     gap: 0.3rem;
   }
 }
+.courses-container {
+  width: 90%;
+  margin: 5% auto;
+}
+.courses-container .carousel-item {
+  height: 600px;
+}
+.courses-container .carousel-item .item-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.courses-container .carousel-item .item-content .course-description {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-evenly;
+  padding: 1.5% 1.5% 0 1.5%;
+}
+.courses-container .carousel-item .item-content .course-description .course-title {
+  font-size: 2.5rem;
+}
+.courses-container .carousel-item .item-content .course-description .course-text {
+  font-size: 1rem;
+}
+.courses-container .carousel-item .item-content .course-description .button {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  background: #222831;
+  color: #EEEEEE;
+}
+.courses-container .carousel-item .item-content .course-description .button:hover {
+  background: #FFD369;
+  color: #222831;
+}
+.courses-container .carousel-item .item-content .image-container {
+  width: 60%;
+  height: 100%;
+}
+.courses-container .carousel-item .item-content .image-container .carousel-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.6);
+}
+
+@media screen and (max-width: 1050px) {
+  .courses-container .carousel-item {
+    height: 700px;
+  }
+  .courses-container .carousel-item .item-content .course-description {
+    padding: 0;
+  }
+  .courses-container .carousel-item .item-content {
+    flex-direction: column;
+  }
+  .courses-container .carousel-item .item-content .image-container {
+    width: 100%;
+    height: 50%;
+  }
+  .courses-container .carousel-item .item-content .course-description {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .courses-container .carousel-item {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .courses-container .carousel-item {
+    height: 1000px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .courses-container .carousel-item {
+    height: 1100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .courses-container .carousel-item {
+    height: 1400px;
+  }
+}
 .ebooks h2 {
-  margin: 10% 5% 0 5%;
+  margin: 10% 6.5% 0 6.5%;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -61,7 +162,7 @@ nav .social-media img {
   justify-content: center;
 }
 .ebooks-content .container {
-  max-width: 90%;
+  max-width: 87%;
   width: 100%;
   padding: 40px 0;
 }
@@ -73,7 +174,7 @@ nav .social-media img {
   border-radius: 8px;
 }
 .ebooks-content .container .slide-container .card .image-box {
-  height: 300px;
+  height: 200px;
 }
 .ebooks-content .container .slide-container .card .image-box img {
   width: 100%;
@@ -92,6 +193,7 @@ nav .social-media img {
   border-radius: 0 0 8px 8px;
 }
 .ebooks-content .container .slide-container .card .ebook-details .ebook-title {
+  font-size: 1rem;
   height: 70px;
   margin: 1rem;
   display: flex;
@@ -102,6 +204,7 @@ nav .social-media img {
   text-decoration: none;
 }
 .ebooks-content .container .slide-container .card .ebook-details .link-button .ebook-button {
+  font-size: 1rem;
   background: #222831;
   color: #EEEEEE;
   padding: 1rem 0;
@@ -143,7 +246,102 @@ nav .social-media img {
 }
 
 @media screen and (max-width: 768px) {
+  .ebooks h2 {
+    text-align: center;
+    margin-top: 15%;
+  }
   .swiper-navBtn {
     display: none;
+  }
+}
+.about-container {
+  width: 87%;
+  margin: 10% auto 0 auto;
+}
+.about-container .about-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.about-container .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+.about-container .about-content .about-image-container {
+  position: relative;
+  min-width: 350px;
+  height: 430px;
+}
+.about-container .about-content .about-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+.about-container .about-content .about-image-container::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  outline: 5px solid #FFD369;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+}
+.about-container .about-content .about-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  text-align: justify;
+  border-top: 1px solid #FFD369;
+  border-bottom: 1px solid #FFD369;
+}
+.about-container .about-content .about-description .description-title {
+  margin-top: 16px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.about-container .about-content .about-description .description-text {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1800px) {
+  .about-container .about-content .about-description {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .about-container .about-content .about-description {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .about-container .about-content .about-description {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-container .about-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .about-container .about-content .about-description {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about-container .about-content .about-image-container {
+    min-width: 270px;
+    height: 350px;
   }
 }/*# sourceMappingURL=style.css.map */

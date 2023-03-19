@@ -2,7 +2,7 @@
 
 .ebooks {
     h2 {
-        margin: 10% 5% 0 5%;
+        margin: 10% 6.5% 0 6.5%;
         font-size: 2rem;
         font-weight: 600;
     }
@@ -15,7 +15,7 @@
     justify-content: center;
 
     .container {
-        max-width: 90%;
+        max-width: 87%;
         width: 100%;
         padding: 40px 0;
 
@@ -27,7 +27,7 @@
                 border-radius: 8px;
 
                 .image-box {
-                    height: 300px;
+                    height: 200px;
 
                     img {
                         width: 100%;
@@ -48,6 +48,7 @@
 
                     .ebook-title {
 
+                        font-size: 1rem;
                         height: 70px;
                         margin: 1rem;
                         display: flex;
@@ -59,6 +60,7 @@
                         text-decoration: none;
 
                         .ebook-button {
+                            font-size: 1rem;
                             background: $first-color;
                             color: $fourth-color;
                             padding: 1rem 0;
@@ -109,6 +111,11 @@
 }
 
 @media screen and (max-width: 768px) {
+    .ebooks h2 {
+        text-align: center;
+        margin-top: 15%;
+    }
+
     .swiper-navBtn {
         display: none;
     }
