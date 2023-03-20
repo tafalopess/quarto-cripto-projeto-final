@@ -344,4 +344,34 @@ nav .social-media img {
     min-width: 270px;
     height: 350px;
   }
+}
+.faq-container {
+  margin: 5% 6.5%;
+}
+.faq-container .faq-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.faq-container .faq-content {
+  width: 60%;
+  margin: 40px 0;
+}
+.faq-container .faq-content details summary {
+  padding: 1rem;
+  background: rgba(57, 62, 70, 0.5);
+  border-bottom: 1px solid rgba(255, 211, 105, 0.1);
+}
+.faq-container .faq-content details p {
+  background: rgba(34, 40, 49, 0.7);
+  padding: 1rem 3rem;
+  font-size: 0.8rem;
+  color: #EEEEEE;
+  margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq-container .faq-content {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
