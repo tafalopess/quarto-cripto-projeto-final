@@ -46,7 +46,6 @@
             align-items: center;
             justify-content: space-evenly;
             width: 60%;
-            text-align: justify;
             border-top: 1px solid $third-color;
             border-bottom: 1px solid $third-color;
 
@@ -58,6 +57,7 @@
 
             .description-text {
                 font-size: 1rem;
+                text-align: justify;
             }
         }
 

@@ -108,7 +108,7 @@ nav .social-media img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.6);
+  filter: brightness(0.8);
 }
 
 @media screen and (max-width: 1050px) {
@@ -182,6 +182,7 @@ nav .social-media img {
   border-radius: 8px 8px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(0.8);
 }
 .ebooks-content .container .slide-container .card .ebook-details {
   display: flex;
@@ -297,7 +298,6 @@ nav .social-media img {
   align-items: center;
   justify-content: space-evenly;
   width: 60%;
-  text-align: justify;
   border-top: 1px solid #FFD369;
   border-bottom: 1px solid #FFD369;
 }
@@ -308,6 +308,7 @@ nav .social-media img {
 }
 .about-container .about-content .about-description .description-text {
   font-size: 1rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 1800px) {
