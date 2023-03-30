@@ -38,3 +38,9 @@
         color: $first-color;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .cta-course-container .cta-button {
+        font-size: 1.5rem;
+    }
+}
