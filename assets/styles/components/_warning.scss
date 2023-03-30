@@ -1,0 +1,17 @@
+@import "./../abstract/var";
+
+.warning {
+    width: 87%;
+    margin: 10% auto 5% auto;
+    background: rgba(57, 62, 70, 0.3);
+    padding: 1.5rem;
+    border: 3px solid $third-color;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    .warning-text {
+        margin: 0;
+        span {
+            font-weight: 600;
+        }
+    }   
+}

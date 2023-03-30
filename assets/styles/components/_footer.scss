@@ -48,42 +48,6 @@ footer {
                 }
             }
         }
-
-        .info-contact {
-            display: flex;
-            flex-direction: column;
-
-            .contact {
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding-bottom: .5rem;
-            }
-
-            .contact-list {
-                display: flex;
-                flex-direction: column;
-                gap: .5rem;
-                padding: 0;
-
-                .contact-item {
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    color: $fourth-color;
-                    font-size: .9rem;
-                    gap: .5rem;
-
-                    img {
-                        width: 25px;
-                    }
-                }
-
-                a:hover {
-                    color: $third-color;
-                }
-            }
-        }
-
     }
 
     .copywrite {
@@ -113,14 +77,6 @@ footer {
 
             .community {
                 align-items: center;
-            }
-
-            .info-contact {
-                align-items: center;
-
-                .contact-list {
-                    align-items: center;
-                }
             }
         }
     }

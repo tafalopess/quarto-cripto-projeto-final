@@ -1,0 +1,36 @@
+@import "./../abstract/var";
+
+.transition-container {
+    width: 87%;
+    margin: 10% auto;
+    padding: 5% 0;
+    border-top: 1px solid $third-color;
+    border-bottom: 1px solid $third-color;
+
+    .transition-title {
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 600;
+        span {
+            color: $third-color;
+        }
+    }
+    .transition-text {
+        font-size: 1.5rem;
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .transition-container .transition-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .transition-container .transition-title {
+        font-size: 2rem;
+    }
+}
