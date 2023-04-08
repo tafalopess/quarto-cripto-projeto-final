@@ -3,8 +3,8 @@
 .cta-course-container {
     width: 87%;
     margin: 10% auto 5% auto;
-    text-align: justify;
     .cta-title {
+        text-align: center;
         font-size: 2.5rem;
         margin: 15px 0;
         span{
@@ -12,9 +12,12 @@
         }
     }
     .cta-text {
-        margin: 0;
+        text-align: center;
+        margin: 30px 0;
     }
     .cta-list {
+        margin: 0 auto;
+        width: 40%;
         .cta-item {
             list-style-type:disc;
             color: $third-color;
@@ -29,9 +32,10 @@
         text-transform: uppercase;
         text-decoration: none;
         padding: 1rem 0;
-        margin: 2rem 0;
+        margin: 10% auto 0 auto;
         background: $first-color;
         color: $fourth-color;
+        width: 60%;
     }
     .cta-button:hover {
         background: $third-color;
@@ -40,7 +44,11 @@
 }
 
 @media screen and (max-width: 700px) {
+    .cta-course-container .cta-list {
+        width: 90%;
+    }
     .cta-course-container .cta-button {
         font-size: 1.5rem;
+        width: 90%;
     }
 }

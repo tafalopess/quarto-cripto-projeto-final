@@ -4,8 +4,6 @@
     width: 87%;
     margin: 10% auto;
     padding: 5% 0;
-    border-top: 1px solid $third-color;
-    border-bottom: 1px solid $third-color;
 
     .transition-title {
         font-size: 3rem;
@@ -21,6 +19,14 @@
         margin-top: 5%;
         text-align: center;
     }
+}
+
+.transition-course {
+    border-bottom: 1px solid $third-color;
+}
+
+.transition-ebook {
+    border-top: 1px solid $third-color;
 }
 
 @media screen and (max-width: 700px) {
