@@ -157,6 +157,9 @@ nav .social-media img {
   .banner .banner-content .banner-description .banner-title {
     font-size: 1.5rem;
   }
+  .banner .banner-content .banner-description .banner-text {
+    font-size: 1rem;
+  }
 }
 .transition-container {
   width: 87%;
