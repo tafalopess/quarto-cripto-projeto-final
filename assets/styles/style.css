@@ -250,9 +250,9 @@ nav .social-media img {
   border-radius: 16px;
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1450px) {
   .courses-container .carousel-item {
-    height: 700px;
+    height: 1000px;
   }
   .courses-container .carousel-item .item-content .course-description {
     padding: 0;
@@ -271,22 +271,22 @@ nav .social-media img {
 }
 @media screen and (max-width: 800px) {
   .courses-container .carousel-item {
-    height: 800px;
+    height: 1180px;
   }
 }
 @media screen and (max-width: 550px) {
   .courses-container .carousel-item {
-    height: 1000px;
+    height: 1400px;
   }
 }
 @media screen and (max-width: 450px) {
   .courses-container .carousel-item {
-    height: 1100px;
+    height: 1800px;
   }
 }
 @media screen and (max-width: 350px) {
   .courses-container .carousel-item {
-    height: 1400px;
+    height: 1900px;
   }
 }
 .cta-course-container {
