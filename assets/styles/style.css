@@ -160,6 +160,10 @@ nav .social-media img {
   .banner .banner-content .banner-description .banner-text {
     font-size: 1rem;
   }
+  .banner .banner-button {
+    font-size: 1rem;
+    width: 90%;
+  }
 }
 .transition-container {
   width: 87%;
